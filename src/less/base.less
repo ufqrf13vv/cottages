@@ -1,0 +1,38 @@
+body {
+	font-family: 'OpenSansRegular';
+	font-size: 15px;
+
+	color: @base;
+}
+
+.container {
+	width: @xs;
+
+	margin: 0 auto;
+
+	@media @small {
+		width: @sm;
+	}
+
+	@media @medium {
+		width: @md;
+	}
+
+	@media @large {
+		width: @lg;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h2 {
+	font-family: 'OpenSansBold';
+	font-size: 24px;
+}
+
+button:focus {
+	outline: none;
+}

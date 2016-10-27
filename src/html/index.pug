@@ -1,0 +1,142 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Cottages
+
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='js/slick/slick-theme.css')
+		link(rel='stylesheet', href='js/slick/slick.css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		.container
+			header.header
+				.header__block
+					.header__adress г. Омск, ул. Свободная д. 161 <br>
+						span С ул. Нейбута по "15-й Линии" до конца в сторону Оми
+					a.price(href="#") 
+						span.price__border Цены на наши услуги
+					button.header__burger
+						span.header__burger-top
+						span.header__burger-center
+						span.header__burger-bottom
+
+				a.logo(href="/")
+					img(src="images/logo.png")
+
+				.header__block
+					.header__phones +7 (3812) <span>50-74-79</span> <br>+7 (951) <span>425-51-21</span>
+					a.price(href="#") 
+						span.price__border Карта проезда
+					a.header__vk(href="#")
+
+			.nav
+				ul.nav__list
+					li.nav__item
+						.nav__border
+							.nav__small-border
+								.nav__item-title
+									.nav__item-text Коттеджи
+									a.nav__item-more(href="#") Узнать подробнее
+									a.nav__item-feedback(href="#") Отзывы
+						img(src="images/nav.png")
+
+					li.nav__item
+						.nav__border
+							.nav__small-border
+								.nav__item-title
+									.nav__item-text Квартиры
+									a.nav__item-more(href="#") Узнать подробнее
+									a.nav__item-feedback(href="#") Отзывы
+						img(src="images/nav-1.png")
+					li.nav__item
+						.nav__border
+							.nav__small-border
+								.nav__item-title
+									.nav__item-text Банкеты
+									a.nav__item-more(href="#") Узнать подробнее
+									a.nav__item-feedback(href="#") Отзывы
+						img(src="images/nav-2.png")
+					li.nav__item
+						.nav__border
+							.nav__small-border
+								.nav__item-title
+									.nav__item-text Баня
+									a.nav__item-more(href="#") Узнать подробнее
+									a.nav__item-feedback(href="#") Отзывы
+						img(src="images/nav-3.png")
+
+		.gallery
+			.container
+				.gallery__header Коттеджи
+				.gallery__list
+					.gallery__item
+						.gallery__border
+							.gallery__small-border
+								.gallery__item-text
+									.gallery__item-title Коттедж №1
+									.gallery__item-desc Баня из кедра
+									.gallery__item-price 6000 <span>c</span> - 8000 <span>c</span>
+						img(src="images/cottage-1.png")
+					.gallery__item
+						.gallery__border
+							.gallery__small-border
+								.gallery__item-text
+									.gallery__item-title Коттедж №2
+									.gallery__item-desc Баня из кедра
+									.gallery__item-price 6000 <span>c</span> - 8000 <span>c</span>
+						img(src="images/cottage-2.png")
+					.gallery__item
+						.gallery__border
+							.gallery__small-border
+								.gallery__item-text
+									.gallery__item-title Коттедж №3
+									.gallery__item-desc Баня из кедра
+									.gallery__item-price 6000 <span>c</span> - 8000 <span>c</span>
+						img(src="images/cottage-3.png")
+					.gallery__item
+						.gallery__border
+							.gallery__small-border
+								.gallery__item-text
+									.gallery__item-title Коттедж №4
+									.gallery__item-desc Баня из кедра
+									.gallery__item-price 6000 <span>c</span> - 8000 <span>c</span>
+						img(src="images/cottage-4.png")
+
+		.container
+			.wrapper
+				.video
+					.video__bg
+						iframe(width="460", height="345", src="https://www.youtube.com/embed/3jT_q7dt-cM",frameborder="0", allowfullscreen)
+					.video__title Видео о коттеджах
+
+				.content
+					.vk
+					h2 Коттедж посуточно: аренда в Омске
+					p Всем, кто собирается отдыхать за городом, зона отдыха «Уютный двор» предлагает в аренду коттедж в Омске. У нас вы можете снять коттедж на выходные, пару часов или арендовать коттедж посуточно. «Уютный двор» - этоаренда коттеджа посуточно замечательное место, где можно отдохнуть с семьей, побыть наедине с близким человеком, устроить корпоративную вечеринку, отметить праздник или попариться в бане. Отдых в коттеджах поможет вам отвлечься от городской суеты и набраться сил.
+
+					p На сайте нашей зоны отдыха вы можете просмотреть большое количество фото и, избрав понравившийся коттедж в Омске, забронировать его на определенное время, связавшись с нашими специалистами по телефонам: <b>50-74-79, 8-951-425-51-21</b>.
+
+		form.back-call
+			.container
+				.back-call__header Хотите забронировать коттедж в Омске на сутки?
+				.back-call__p Просто заполните форму ниже!
+				
+				.back-call__row
+					.back-call__item
+						input.back-call__input(placeholder="Ваше имя")
+					.back-call__item
+						input.back-call__input(placeholder="Контактный телефон")
+					.back-call__item
+						input.back-call__input(placeholder="Дата бронирования")
+					.back-call__item
+						input.back-call__submit(type="submit", value="Отправить")
+
+
+	script(src='js/jquery-2.2.0.js')
+	script(src='js/jquery-ui.min.js')
+	script(src='js/slick/slick.min.js')
+	script(src='js/script.js')
+
