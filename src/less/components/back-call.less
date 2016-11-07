@@ -1,5 +1,5 @@
 .back-call {
-	background: @base;
+	background: url('../images/bg-back-call.png') no-repeat 0 0;
 	padding-bottom: 50px;
 
 	&__header {
@@ -30,6 +30,8 @@
 	&__row {
 		display: flex;
 
+		position: relative;
+
 		@media @medium {
 			justify-content: flex-start;
 		}
@@ -42,6 +44,30 @@
 			flex-wrap: wrap;
 
 			padding: 0 20px;
+		}
+
+		&::after {
+			content: '';
+
+			height: 217px;
+			width: 283px;
+
+			background: url('../images/calendar.png') no-repeat 0 0;
+
+			position: absolute;
+			top: -130px;
+
+			display: none;
+
+			@media @large {
+				display: block;
+				right: -40px;
+			}
+
+			@media @medium {
+				display: block;
+				right: -220px;
+			}
 		}
 	}
 
