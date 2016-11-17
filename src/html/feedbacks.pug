@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Feedbacks
+
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='js/slick/slick-theme.css')
+		link(rel='stylesheet', href='js/slick/slick.css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		.container
+			include includes/header
+
+			h2 Отзывы наших гостей
+
+			.wrapper
+				.feedbacks
+					.feedback
+						.feedback__title Марина, <span>21.21.2016</span>
+						.feedback__text Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+
+					.feedback
+						.feedback__title Марина, <span>21.21.2016</span>
+						.feedback__text Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+
+					.feedback
+						.feedback__title Марина, <span>21.21.2016</span>
+						.feedback__text Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+
+				.feedback-form
+					.feedback-form__title Оставить отзыв
+					input.feedback-form__input(type="text", placeholder="Ваше имя")
+					input.feedback-form__input(type="text", placeholder="Ваш email")
+					textarea.feedback-form__text Ваш вопрос
+					input.feedback-form__submit Отправить

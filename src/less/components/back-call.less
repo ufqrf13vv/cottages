@@ -1,6 +1,10 @@
 .back-call {
-	background: url('../images/bg-back-call.png') no-repeat 0 0;
+	background: url('../images/bg-back-call.png') repeat-y 0 0;
 	padding-bottom: 50px;
+
+	@media @extrasmall {
+		padding-bottom: 0;
+	}
 
 	&__header {
 		padding-top: 20px;

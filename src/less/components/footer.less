@@ -1,11 +1,22 @@
 .footer {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	padding: 38px 0;
 
+	@media @extrasmall {
+		justify-content: center;
+	}
+
 	&__block {
 		display: flex;
+		flex-wrap: wrap;
+
+		@media @extrasmall {
+			justify-content: center;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__adress,
@@ -19,6 +30,11 @@
 		margin-right: 70px;
 
 		font-size: 14px;
+
+		@media @extrasmall {
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__phone {
@@ -39,6 +55,10 @@
 		background: url('../images/icons.png') no-repeat -15px -37px;
 		position: absolute;
 		left: 0;
+
+		@media @extrasmall {
+			background: url('../images/icons.png') no-repeat -15px -93px;
+		}
 	}
 
 	&__phone::before {
@@ -50,6 +70,10 @@
 		background: url('../images/icons.png') no-repeat -15px -64px;
 		position: absolute;
 		left: 0;
+
+		@media @extrasmall {
+			background: url('../images/icons.png') no-repeat -15px -120px;
+		}
 	}
 }
 
@@ -58,6 +82,19 @@
 	font-size: 14px;
 }
 
-.developer a {
-	color: #d74444;
+.copyright {
+	@media @extrasmall {
+		order: 1;
+		margin-bottom: 25px;
+	}
+}
+
+.developer {
+	@media @extrasmall {
+			order: 2;	
+	}
+
+	& a {
+		color: #d74444;
+	}
 }
