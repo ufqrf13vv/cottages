@@ -34,5 +34,10 @@ html
 					.feedback-form__title Оставить отзыв
 					input.feedback-form__input(type="text", placeholder="Ваше имя")
 					input.feedback-form__input(type="text", placeholder="Ваш email")
-					textarea.feedback-form__text Ваш вопрос
-					input.feedback-form__submit Отправить
+					textarea.feedback-form__text(placeholder="Ваш вопрос")
+					input.feedback-form__submit(type="submit")
+
+		include includes/back-call
+
+		.container
+			include includes/footer

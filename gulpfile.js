@@ -14,10 +14,10 @@ var gulp = require('gulp'),
 var path = {
     build: { 
         html: 'build/',
-        js: 'build/js/',
-        css: 'build/css/',
-        img: 'build/images/',
-        fonts: 'build/fonts/'
+        js: '../templates/default/scripts/',
+        css: '../templates/default/css/',
+        img: '../templates/default/images/',
+        fonts: '../templates/default/fonts/'
     },
     src: { 
         pug: 'src/html/**/*.pug', 
@@ -89,8 +89,8 @@ gulp.task('fonts', function() {
 
 //  Сборка
 gulp.task('build', [
-    'html',
     'style',
+    'stylemin',
     'fonts',
     'image',
     'js'

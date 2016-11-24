@@ -1,0 +1,148 @@
+.rent {
+	display: flex;
+
+	margin-bottom: 50px;
+
+	&__image {
+		width: 370px;
+		height: 260px;
+
+		overflow: hidden;
+
+		margin-right: 30px;
+
+		position: relative;
+	}
+
+	&__title {
+		font-family: 'OpenSansBold';
+		font-size: 18px;
+
+		color: #ffffff;
+
+		padding: 15px 30px;
+
+		background: rgba(100, 73, 60, 0.8);
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+
+		position: absolute;
+		bottom: 25px;
+	}
+
+	& img {
+		height: 100%;
+	}
+
+	&__wrapper {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	&__prices {
+		display: flex;
+
+		margin-bottom: 25px;
+	}
+
+	&__price {
+		width: 170px;
+
+		margin-right: 30px;
+
+		&-text {
+			background: @pink;
+			padding: 8px 0 10px 0;
+
+			text-align: center;
+
+			margin-bottom: 2px;
+		}
+
+		&-sum {
+			font-family: 'OpenSansBold';
+			font-size: 16px;
+
+			background: @pink;
+			padding: 8px 0 10px 0;
+
+			text-align: center;
+
+			& > span {
+				font-family: 'ALSRubl';
+			}
+		}
+	}
+
+	&__text {
+		font-family: 'OpenSansBold';
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	&__description {
+		margin-bottom: 75px;
+	}
+
+	&__buttons {
+		display: flex;
+	}
+
+	&__photo,
+	&__order {
+		display: block;
+		width: 200px;
+
+		border: 5px solid @base;
+		border-radius: 2px;
+		text-decoration: none;
+
+		font-family: 'OpenSansBold';
+		font-size: 16px;
+
+		color: #ffffff;
+		background: @base;
+
+		margin-right: 30px;
+
+		position: relative;
+	}
+
+	&__photo-border {
+		width: 200px;
+		box-sizing: border-box;
+
+		padding: 8px 0 8px 55px;
+
+		border: 1px solid #a58f7e;
+		border-radius: 2px;
+		background: @base;
+	}
+
+	&__photo, 
+	&__order {
+
+		&::before {
+			content: '';
+
+			width: 35px;
+			height: 30px;
+
+			position: absolute;
+			top: 7px;
+			left: 10px;
+		}
+	}
+
+	&__order {
+		&::before {
+			background: url('../images/rent.png') no-repeat 0 0;
+		}
+	}
+
+	&__photo {
+		&::before {
+			background: url('../images/photo.png') no-repeat 0 0;
+		}
+	}
+}

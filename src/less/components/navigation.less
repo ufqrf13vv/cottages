@@ -25,11 +25,17 @@
 	}
 
 	&__item {
+		width: auto;
+
 		position: relative;
 
 		line-height: 0;
 
 		margin-bottom: 20px;
+
+		@media @medium {
+			width: 24%;
+		}
 
 		&:hover .nav__item-text {
 			margin-bottom: 10px;
@@ -83,6 +89,14 @@
 		&-feedback {
 			display: none;
 		}
+
+    	& img {
+    		width: auto;
+    		
+    		@media @medium {
+    			width: 100%;
+    		}
+    	}
 	}
 
 	&__link {
